@@ -34,3 +34,26 @@ if (!function_exists('dd')) {
     die;
   }
 }
+
+function writePHPMemory($file)
+{
+
+  $handle = fopen('php://temp', 'w+');
+
+  fwrite($handle, $file);
+
+//  rewind($handle); // resets the position of pointer
+//
+//  fread($handle, fstat($handle)['size']); // I am freaking awesome
+
+  return $handle;
+}
+
+function readPHPMemory($handle)
+{
+
+  rewind($handle); // resets the position of pointer
+
+  return fread($handle, fstat($handle)['size']);
+
+}
