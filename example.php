@@ -1,4 +1,4 @@
-<?
+<?php
 
 include "Util.php";
 include "SimpleImage.php";
