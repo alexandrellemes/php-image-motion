@@ -3,3 +3,6 @@ PHP-image-motion is a set of tools that aims to provide some kind of base for us
 I have no formal training in this arena of motion detection, so the functions tend to be quite rudimentary. 
 
 
+# Examples
+
+Use options 1 to 3 to perform your tests.
